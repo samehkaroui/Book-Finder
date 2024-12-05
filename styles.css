@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #393636;
+    margin: 0;
+    padding: 20px;
+}
+
+#book-app {
+    background: rgb(89, 91, 106);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+#searchForm {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 70%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f5f;
+}
+
+#bookDisplay {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 200fr));
+    gap: 20px;
+}
+
+.book {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+}
+
+.book .title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.book .author {
+    color: #555;
+    margin: 5px 0;
+}
+
+.book .description {
+    color: #777;
+    font-size: 0.9em;
+}
+
+#paginationControls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#paginationControls button {
+    margin: 0 5px;
+}
